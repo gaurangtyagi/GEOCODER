@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const geocoder = require('../utils/geocoder'); 
 // we take string as address
 // geocoder converts that address into point form 
-// we do not save string in our database only point address
 const StoreSchema = new mongoose.Schema ({
     storeId: {
         type: String, 
@@ -44,8 +43,6 @@ StoreSchema.pre('save', async function(next){
         formattedAddress: loc[0].formattedAddress
     }; 
     console.log(this); 
-    // Do not save address
-    this.address = undefined; 
     next(); 
 }); 
 

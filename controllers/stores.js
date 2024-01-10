@@ -18,7 +18,6 @@ exports.getStores = async (req, res, next) => {
     }
 }; 
 
-
 // @desc: Add a store
 // @route: POST /api/v1/stores
 // @access: Public

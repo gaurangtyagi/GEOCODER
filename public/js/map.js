@@ -4,7 +4,7 @@ const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
   zoom: 4,
-  center: [77.1025, 28.7041],
+  center: [82.1025, 25.7041],
 });
 // Fetch stores from API
 async function getStores() {
